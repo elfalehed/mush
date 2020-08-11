@@ -5,7 +5,8 @@ import hashlib
 from hashlib import md5
 
 
-def md5():
+
+def Dmd5():
     string = input("Enter the word/sentence you want to decrypt?\n") 
     result = hashlib.md5(string.encode())
 
@@ -17,7 +18,9 @@ def md5():
 
 
 def main():
-
-    md5() 
+    logo = open("banner.txt", "r")
+    bn = logo.read()
+    print(bn)
+    Dmd5() 
 
 if __name__=='__main__':main() 

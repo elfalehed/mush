@@ -1,0 +1,2 @@
+# mush
+multiple hash generator 

@@ -17,6 +17,18 @@ def Dmd5():
 
 
 
+
+def cod(): 
+    dd = open("intro1.txt", "r") 
+    ddd = dd.read() 
+    print(ddd) 
+    op = input("$  ") 
+    if op == 1: 
+        Dmd5() 
+    
+
+
+
 # where it all makes sense 
 def main():
     logo = open("banner.txt", "r")
@@ -25,6 +37,11 @@ def main():
     intrO = intro.read() 
     print(bn)
     print(intrO) 
-    Dmd5() 
+    pp = input("$  ") 
+    if pp == 1 : 
+        fun()
+    else: 
+        cod() 
+
 
 if __name__=='__main__':main() 

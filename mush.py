@@ -3,17 +3,22 @@
 # intro Mush: A multiple hash generator. 
 # basically doing encrypting & decrypting comes later 
 
-# importing stuff  
+# importing Hashs  
 import hashlib 
 from hashlib import md5
+from mosecodelib import text
 
 
+
+# decrypting using md5 
 def Dmd5():
     string = input("Enter the word/sentence you want to decrypt?\n") 
     result = hashlib.md5(string.encode())
 
     print("the Hexadecimal equivalent of hash is: ", end="") 
     print(result.hexdigest())
+
+def Dmorse(): 
 
 
 

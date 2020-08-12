@@ -18,13 +18,23 @@ def Dmd5():
 
 
 
-def cod(): 
-    dd = open("intro1.txt", "r") 
+def fun(): 
+    dd = open("promtps/intro1.txt", "r") 
     ddd = dd.read() 
     print(ddd) 
     op = input("$  ") 
     if op == 1: 
         Dmd5() 
+
+def cod(): 
+    zz = open("prompts/intro2.txt", "r") 
+    zzz = zz.read()
+    print(zzz) 
+    ol = input("$  ") 
+    if ol == 1: 
+        Dmorse()
+    elif ol == 2:
+        Dbinary()
     
 
 
@@ -32,7 +42,7 @@ def cod():
 # where it all makes sense 
 def main():
     logo = open("banner.txt", "r")
-    intro = open("intro.txt","r") 
+    intro = open("prompts/intro.txt","r") 
     bn = logo.read()
     intrO = intro.read() 
     print(bn)

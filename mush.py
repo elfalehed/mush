@@ -44,8 +44,7 @@ mushlogo = color_random[0] + '''
 mushprompt = "mush ~# "
 continuePrompt = "\nClick [Return] to continue"
 
-class mush: 
-   
+class mush:
         print(mushlogo + RED + ''' 
         [*] The Quiter You Become, The More You Are Able To Hear! 
         [!] Mush is a multiple hashing tool. ENJOY hashing things! 
@@ -59,12 +58,18 @@ class mush:
 
         ''')
         choice = input(mushprompt) 
-        clearSrc() 
         if choice == "1": 
             Dmd5()
         elif choice == "2": 
-            DSHA1()
-
+            dec()
+        elif choice == "3": 
+            enc() 
+        elif choice == "4": 
+            about() 
+        else:
+            print(RED + "       WRONG ANSWER!!! \n")
+            print() 
+            mush() 
 # decrypting using md5 
 def Emd5():
     string = input("Enter the word/sentence you want to decrypt?\n") 

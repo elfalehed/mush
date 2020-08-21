@@ -7,14 +7,15 @@
 
 # importing Hashs  
 import hashlib 
-import os, sys 
+import os, sys
+from os import system, name
+import subprocess 
 from hashlib import md5
 from zlib import *
 import socket 
 import random 
 import glob 
 import base64 
-import time 
 import getpass 
 from colorama import * 
 from sys import argv
@@ -47,7 +48,7 @@ continuePrompt = "\nClick [Return] to continue"
 class mush:
         print(mushlogo + RED + ''' 
         [*] The Quiter You Become, The More You Are Able To Hear! 
-        [!] Mush is a multiple hashing tool. ENJOY hashing things! 
+        [!] Mush is a multiple hashing/encrypting tool. ENJOY hashing/encrypting things! 
         ''' + END +'''
         {1} -- HASHING 
         {2} -- DECRYPTING
@@ -97,10 +98,12 @@ def cod():
         Emorse()
     elif ol == 2:
         Ebinary()
+
    
 if __name__=='__main__': 
-    try:
-       mush()
-    except KeyboardInterrupt: 
-        print(" SOMETHIGN WRONG! ...\n") 
-        time.sleep(0.25) 
+       try:
+          os.system('clear')  
+          mush()
+       except KeyboardInterrupt: 
+           print(" SOMETHIGN WRONG! ...\n") 
+           time.sleep(0.25) 

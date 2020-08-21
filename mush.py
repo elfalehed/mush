@@ -43,18 +43,15 @@ mushlogo = color_random[0] + '''
 '''
 
 mushprompt = "mush ~# "
-continuePrompt = "\nClick [Return] to continue"
-
 class mush:
         print(mushlogo + RED + ''' 
         [*] The Quiter You Become, The More You Are Able To Hear! 
         [!] Mush is a multiple hashing/encrypting tool. ENJOY hashing/encrypting things! 
         ''' + END +'''
         {1} -- HASHING 
-        {2} -- DECRYPTING
-        {3} -- ENCRYPTING 
+        {2} -- ENCRYPTING
+        {3} -- DECRYPTING 
         {4} -- ABOUT  \n
-
 
 
         ''')
@@ -78,8 +75,6 @@ def Emd5():
 
     print("the Hexadecimal equivalent of hash is: ", end="") 
     print(result.hexdigest())
- 
-
 
 def fun():
     dd = open("promtps/intro1.txt", "r") 

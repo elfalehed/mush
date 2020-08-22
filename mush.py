@@ -16,10 +16,12 @@ import socket
 import random 
 import glob 
 import base64 
-import getpass 
+import getpass
+import colorama
 from colorama import * 
 from sys import argv
-from time import gmtime, strftime, sleep 
+from time import gmtime, strftime, sleep
+colorama.init()
 
 HEADER = '\033[95m'
 IMPORTANT = '\33[35m'
@@ -44,6 +46,41 @@ mushlogo = color_random[0] + '''
 
 mushprompt = "mush ~# "
 class mush:
+
+    def choice(self):
+        choice = input(mushprompt) 
+        if choice == "1": 
+            self.Dmd5()
+        elif choice == "2": 
+            self.dec()
+        elif choice == "3": 
+            self.enc() 
+        elif choice == "4": 
+            self.about() 
+        else:
+            print(RED + "       WRONG ANSWER!!! \n")
+            print() 
+            mush()
+
+    # Hashing using md5 
+    def Dmd5(self):
+        string = input("Enter the word/sentence you want to decrypt?\n") 
+        result = hashlib.md5(string.encode())
+
+        print("the Hexadecimal equivalent of hash is: ", end="") 
+        print(result.hexdigest())
+        self.choice()
+
+    def dec(self):
+        pass
+
+    def enc(self):
+        pass
+
+    def about(self):
+        pass
+
+    def run(self):
         print(mushlogo + RED + ''' 
         [*] The Quiter You Become, The More You Are Able To Hear! 
         [!] Mush is a multiple hashing/encrypting tool. ENJOY hashing/encrypting things! 
@@ -55,26 +92,8 @@ class mush:
 
 
         ''')
-        choice = input(mushprompt) 
-        if choice == "1": 
-            Dmd5()
-        elif choice == "2": 
-            dec()
-        elif choice == "3": 
-            enc() 
-        elif choice == "4": 
-            about() 
-        else:
-            print(RED + "       WRONG ANSWER!!! \n")
-            print() 
-            mush() 
-# decrypting using md5 
-def Emd5():
-    string = input("Enter the word/sentence you want to decrypt?\n") 
-    result = hashlib.md5(string.encode())
-
-    print("the Hexadecimal equivalent of hash is: ", end="") 
-    print(result.hexdigest())
+        self.choice()
+            
 
 def fun():
     dd = open("promtps/intro1.txt", "r") 
@@ -97,8 +116,9 @@ def cod():
    
 if __name__=='__main__': 
        try:
-          os.system('clear')  
-          mush()
+          os.system('cls' if os.name=='nt' else 'clear')
+          mushObject= mush()
+          mushObject.run()
        except KeyboardInterrupt: 
            print(" SOMETHIGN WRONG! ...\n") 
            time.sleep(0.25) 

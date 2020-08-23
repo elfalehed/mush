@@ -19,9 +19,9 @@ multiple hash generator
 
 
 ## :leaves: You can contribute too: <br />
->
-> 1. View The Source Code 
-> 2. Suggest Edit/Upgrade/Fix 
-> 3. Apply it 
-> 4. Submit it 
+
+1. View The Source Code 
+2. Suggest Edit/Upgrade/Fix 
+3. Apply it 
+4. Submit it 
 >   

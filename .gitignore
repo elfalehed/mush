@@ -1,0 +1,6 @@
+.swp 
+*.swp 
+*.py.swp
+^.swp
+*.py.swp 
+^.py.swp 

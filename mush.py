@@ -68,6 +68,7 @@ class mush:
             print(RED + "       WRONG ANSWER!!! \n")
             print() 
             mush() 
+
 # decrypting using md5 
 def Emd5():
     string = input("Enter the word/sentence you want to decrypt?\n") 
@@ -75,14 +76,6 @@ def Emd5():
 
     print("the Hexadecimal equivalent of hash is: ", end="") 
     print(result.hexdigest())
-
-def fun():
-    dd = open("promtps/intro1.txt", "r") 
-    ddd = dd.read() 
-    print(ddd) 
-    op = input("$  ") 
-    if op == 1: 
-        Dmd5() 
 
 def cod(): 
     zz = open("prompts/intro2.txt", "r") 

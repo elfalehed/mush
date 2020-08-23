@@ -16,7 +16,8 @@ multiple hash generator
 * @Amen-Menjli fix needed refactor 
 * Add multiple hashs / encrypting algorithms 
 * Out source Extra cryptography sets (Binary, morsecode..etc)  
-
+ 
+<br/>
 
 ## :leaves: You can contribute too: <br />
 

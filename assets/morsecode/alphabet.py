@@ -65,7 +65,7 @@ LATIN = {
     'É': '..-..',
 }
 
-# these are separate because there overlaps, screwing up reversing.
+# these are separate because there overlaps, screwing up reversing. Mentioned above
 EXTENDED_TO_LATIN = {
     'Å': 'À',
     'Æ': 'Ä',

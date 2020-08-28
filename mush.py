@@ -1,16 +1,22 @@
 #! /usr/bin/env python3 
 # utf-8 
 '''
- / / Thanks to my @0xrick for the refreshing ideas  
-/ / Greetz to @v1s1t0r the creator of @Airgeddo for contacting Me. 
+ / / Thanks to my friend @0xrick for the refreshing ideas  
+/ / Greetz to @v1s1t0r the creator of @Airgeddon for contacting. 
 '''
 
 # importing Hashs  
 import hashlib 
-import os, sys
-from os import system, name
-import subprocess 
 from hashlib import md5
+
+# imports sys related 
+import os, sys
+import subprocess
+from os import system, name
+from time import gmtime, strftime, sleep 
+from sys import argv
+
+# EX
 from zlib import *
 import socket 
 import random 
@@ -18,8 +24,27 @@ import glob
 import base64 
 import getpass 
 from colorama import * 
-from sys import argv
-from time import gmtime, strftime, sleep 
+
+
+
+
+# path for decrypting
+def dec():
+     print(RED +'''
+        {1} -- DES
+        {2} -- ALLEGED RC4
+        {3} -- RC4
+        {4} -- RC5 
+        {5} -- DIAMOND 
+        {6} -- IDEA
+        {7} -- LOKI91
+        {8} -- REDOC III 
+        {9} -- SAPPHIR
+                        ''')
+    
+
+
+
 
 HEADER = '\033[95m'
 IMPORTANT = '\33[35m'
@@ -57,7 +82,7 @@ class mush:
         ''')
         choice = input(mushprompt) 
         if choice == "1": 
-            Dmd5()
+            hash()
         elif choice == "2": 
             dec()
         elif choice == "3": 
@@ -69,13 +94,17 @@ class mush:
             print() 
             mush() 
 
+# path for hashing functions
+def hash():
+    pass
+
 # decrypting using md5 
-def Emd5():
+def Dmd5():
     string = input("Enter the word/sentence you want to decrypt?\n") 
     result = hashlib.md5(string.encode())
 
     print("the Hexadecimal equivalent of hash is: ", end="") 
-    print(result.hexdigest())
+    print(result.hexdigest()) 
 
 def cod(): 
     zz = open("prompts/intro2.txt", "r") 

@@ -10,7 +10,6 @@ multiple hash generator
 * all in one tool 
 
 <br />
-
 ## :round_pushpin: 2DO: <br />
 
 * @Amen-Menjli fix needed refactor 

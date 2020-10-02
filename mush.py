@@ -44,8 +44,6 @@ def dec():
     
 
 
-
-
 HEADER = '\033[95m'
 IMPORTANT = '\33[35m'
 NOTICE = '\033[33m'

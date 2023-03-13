@@ -1,9 +1,6 @@
 #! /usr/bin/env python3 
 # utf-8 
-'''
- / / Thanks to my friend @0xrick for the refreshing ideas  
-/ / Greetz to @v1s1t0r the creator of @Airgeddon for contacting. 
-'''
+
 
 # importing Hashs  
 import hashlib 
